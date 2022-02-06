@@ -1,93 +1,118 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <style>
-        .parent1{
-            position:static;
-            border: solid 3px #e60909;
-            width: 300px;
-            height: 100px;
-            background-color: rgb(219, 217, 53);
-        
-        }
-        .child1{
-            position: absolute;
-            border: solid 2px blue;
-            top: 70px;
-            right:15px;
-            background-color:rgb(146, 219, 146);
-            }
-            .parent2{
-                position:relative;
-                border: solid 2px gray;
-                width:200px;
-                height: 90px;
-                background-color: hotpink;
-            }
-            .child2{
-                position:fixed;
-                border: solid 2px peru;
-                bottom: 90px;
-                right: 16px;
-                background-color: plum;
+      .child1 {
+        position: absolute;
+        border: solid 2px blue;
+        top: 70px;
+        right: 15px;
+        background-color: rgb(146, 219, 146);
+      }
+      .parent2 {
+        position: relative;
+        border: solid 2px gray;
+        width: 200px;
+        height: 90px;
+        background-color: hotpink;
+      }
+      .child2 {
+        position: fixed;
+        border: solid 2px peru;
+        bottom: 90px;
+        right: 16px;
+        background-color: plum;
+      }
+      .parent3 {
+        position: absolute;
+        border: solid 2px orangered;
+        width: 200px;
+        height: 80px;
+        background-color: orangered;
+      }
+      .child3 {
+        position: absolute;
+        border: solid 2px greenyellow;
+        top: 80px;
+        right: 150px;
+        background-color: rgb(159, 159, 187);
+      }
+      .child4 {
+        position: relative;
+        border: solid 2px yellowgreen;
+        width: 300px;
+        height: 2000px;
+      }
 
-            }
-            .parent3{
-                position:absolute;
-                border: solid 2px orangered;
-                width: 200px;
-                height: 80px;
-                background-color: orangered;
-            }
-            .child3{
-                position:absolute;
-                border: solid 2px greenyellow;
-                top: 80px;
-                right: 150px;  
-                background-color: rgb(159, 159, 187);  
-            }
-            .child4{
-                position:relative;
-                border: solid 2px yellowgreen;
-                width: 300px;
-                height: 2000px;
-            }
-            </style>
-</head>
-<body>
-    <h1> The position property</h1>
-<h2> static </h2>
-<p> Slytoday.com has been visited by 1M+ users in the past month
-
-    Singapore Primary Schools - Quick And Easily Found At SlyToday!
-    
-    Quick Results · Find Easily · Compare Products · Search and Discover</p>
-    <div class="parent1">
-       position static.
-       <div class=" child1">  Search secure for London Business School Emba. Search with Visymo.com</div>
-    </div>
-    <h2> relative</h2>
-<p> Welcome to Shortparagraph.com! Our mission is to provide an online <br> platform to help students to discuss anything and everything about <br>Paragraph. This website includes study notes, research papers, essays, a<br>rticles and other allied information submitted by visitors like YOU.
-
-    Before <br>publishing your Paragraph on this site, please read the following pages:</p>
-    <div class=" parent2">
-        position relative
-        <div class="child2"> It is the heart and soul of a school as it provides lots of information and details that students would require.
-
-        </div>
-    </div>
-    <h2> absolute</h2>
-    <p>The librarian allocates cards to students and notes down details when a book is being lend from the library. Once the reference is over, then the book needs to be returned back to the library. We children usually read small story books or Children`s Knowledge bank book, but we have seen students from higher classes, visit library and note down points that they require for their learning. They sometimes even take books from library for reference.
-
+      .stikcy-div {
+        position: sticky;
+        background: rgb(146, 219, 146);
+        top: 10px;
+        z-index: 1;
+        display: inline-block;
+        left: 40%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The position property</h1>
+    <h2>static</h2>
+    <p>
+      Slytoday.com has been visited by 1M+ users in the past month Singapore
+      Primary Schools - Quick And Easily Found At SlyToday! Quick Results · Find
+      Easily · Compare Products · Search and Discover
     </p>
-    <div class="parent3"> 
-        position absolute
-        <div class="child3"> The library is usually a very quiet place and it is often seen full with students and teachers</div>
+
+    <div class="stikcy-div"><p>I am sticky and will roam</p></div>
+
+    <h2>relative</h2>
+    <p>
+      Welcome to Shortparagraph.com! Our mission is to provide an online <br />
+      platform to help students to discuss anything and everything about
+      <br />Paragraph. This website includes study notes, research papers,
+      essays, a<br />rticles and other allied information submitted by visitors
+      like YOU. Before <br />publishing your Paragraph on this site, please read
+      the following pages:
+    </p>
+    <div class="parent2">
+      position relative
+      <div class="child2">
+        It is the heart and soul of a school as it provides lots of information
+        and details that students would require.
+      </div>
+    </div>
+    <h2>absolute</h2>
+    <p>
+      The librarian allocates cards to students and notes down details when a
+      book is being lend from the library. Once the reference is over, then the
+      book needs to be returned back to the library. We children usually read
+      small story books or Children`s Knowledge bank book, but we have seen
+      students from higher classes, visit library and note down points that they
+      require for their learning. They sometimes even take books from library
+      for reference.
+    </p>
+    <div class="parent3">
+      position absolute
+      <div class="child3">
+        The library is usually a very quiet place and it is often seen full with
+        students and teachers
+      </div>
     </div>
     <div class="child4">
-    <p>The library is usually a very quiet place and it is often seen full with students and teachers<br> refereeing notes that they require for the respective subjects that they are looking out <br>for. There is a separate reading room in the library where students could g<br>o and read whatever they like, but maintain silence.
-
-        Lots of knowledge could be <br> acquired from a library and our school library has a great <br>collection of books, which makes this a lot easier for students t<br>o gather information.I like my library very much and <br>I love spending time reading books, sitting in the reading room.<br> It is so quiet that one could really enjoy reading and also study<br> peacefully and learn a lot of great things in the world.</p>
-    </div> 
-</body>
+      <p>
+        The library is usually a very quiet place and it is often seen full with
+        students and teachers<br />
+        refereeing notes that they require for the respective subjects that they
+        are looking out <br />for. There is a separate reading room in the
+        library where students could g<br />o and read whatever they like, but
+        maintain silence. Lots of knowledge could be <br />
+        acquired from a library and our school library has a great
+        <br />collection of books, which makes this a lot easier for students
+        t<br />o gather information.I like my library very much and <br />I love
+        spending time reading books, sitting in the reading room.<br />
+        It is so quiet that one could really enjoy reading and also study<br />
+        peacefully and learn a lot of great things in the world.
+      </p>
+    </div>
+  </body>
 </html>
