@@ -3,29 +3,34 @@
   <head>
     <title>my-profile</title>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         margin: 0;
         padding: 0;
-        background-color: rgb(39, 7, 7)3);
+        background-color: rgb(39, 7, 7, 3);
       }
+
       .mydiv {
-        border: 1px solid rgb(110, 21, 21);
-        background-color: rgb(91, 113, 153);
+        border: 1px solid rgb(231, 87, 87);
+        background-color: rgb(180, 192, 214);
         text-align: center;
         width: 50%;
         height: fit-content;
-        margin: 5% 0 0 30%;
+        margin: auto;
         border-radius: 10px;
         padding: 10px;
       }
-      a:hover{
-          background-color: tomato;
-      }
+
       #second-div {
         width: 90%;
         height: fit-content;
         border: 2px dotted rgb(112, 28, 28);
-        margin: auto;
+        margin: 20px auto;
         border-radius: 10px;
         padding: 10px;
       }
@@ -44,11 +49,7 @@
       }
       .photo,
       .img {
-        
-        border: 5px solid rgb(101, 119, 101);
         border-radius: 50%;
-
-
         width: 150px;
         height: 150px;
       }
@@ -61,154 +62,168 @@
       }
 
       .profile {
-        margin-right: 40%;
-        margin-bottom: 0%;
         text-align: justify;
-        
-
+        color: darkgray;
+        display: flex;
+        margin-top: -22px;
+        margin-left: 22px;
       }
+
       div.p {
         text-align: center;
       }
-      #dob-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
+
+      .my-bio-data:hover {
+        background-color: rgb(160, 190, 87);
+        color: brown;
+        border: 1px solid green;
+        border-radius: 5px;
       }
-      #ludhian-id:hover{
-          background-color:rgb(189, 235, 83);
-          border: 2px solid;
+
+      .block {
+        display: flex;
       }
-      #graduation-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
+
+      .desc {
+        margin-top: 30px;
       }
-      #software-id:hover{
-          background-color:rgb(189, 235, 83);
-          border: 2px solid;
+
+      #html-id {
+        margin-left: 20%;
       }
-      #cricket-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
+
+      .details {
+        color: brown;
       }
-      #male-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #MATA BHIKH-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #languages-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #contact:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #gmail-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #git-id:hover{
-          background-color: rgb(189, 235, 83);
-          border: 2px solid;
-      }
-      #root-1:hover{
-          background-color: rgb(87, 35, 26);
-          border: 2px solid;
-      }
-      #root-2:hover{
-        background-color: tomato;
-        border: 2px solid;
-      }
-      #root-3:hover{
-          background-color: tomato;
-          border: 2px solid;
-      }
-      #root-4:hover{
-          background-color: tomato;
-          border: 2px solid;
-      }
-      #root-5:hover{
-          background-color: tomato;
-          border: 2px solid;
-      }
-      #root-6:hover{
-          background-color: tomato;
-          border: 2px solid;
-      }
-      #root-7:hover{
-          background-color: tomato;
-          border: 2px solid;
+      h1 {
+        font-size: x-large;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: 900;
       }
     </style>
   </head>
   <body>
     <div class="mydiv">
-      <h1 style="color: rgb(82, 173, 102)">who am i</h1>
+      <h1 style="color: rgb(82, 173, 102)">Who Am I?</h1>
       <hr />
       <div id="second-div">
-        <h2 class="myName">kanak kant</h2>
+        <h2 class="myName">Kanak Kant</h2>
         <div class="main-matter">
           <div class="bio">
             <div style="color: rgb(46, 39, 31)" class="p">
-              <div class="photo">
-                <img src="my friend.jpg" alt="myimage" class="img" />
+              <div class="block">
+                <p class="desc">
+                  <b>Human Resource Management </b>is a function that deals with
+                  <br />
+                  recruitment, placement, training,development of organization
+                  members,<br />
+                  HRM is the key ingredient to success of an organization.
+                </p>
+                <div class="photo">
+                  <img src="my friend.jpg" alt="myimage" class="img" />
+                </div>
               </div>
-              <p>
-                
-               <b>Human Resource Management </b>is a function that deals with <br>
-               recruitment, placement, training,development of organization members,<br>
-              HRM is the key ingredient to success of an organization.                                              </p>
+
               <div class="profile" style="color: darkgray">
-                <ol>,
-                  <li>D.O.B:<span class="my-bio-data" id="dob-id"> 05-05-1995</span></li>
-                  <li>Birth Place:<span class="my-bio-data" id="ludhian-id">Ludhiana</span></li>
-                  <li>
-                    Quantification:<span class="my-bio-data" id="graduation-id"> MBA</span>
-                  </li>
-                  
-                  <li>
-                    Job:<span class="my-bio-data" id="software-id">Human Resouce executive</span>
-                  </li>
-                  <li>Hobbies:<span class="my-bio-data" id="cricket-id">LEANING NEW THINGS</span></li>
-                  <li>Gender:<span class="my-bio-data" id="male-id"> FEMALE</span></li>
-                  <li>Father name:<span class="my-bio-data" id="MATA BHIKH-ID"> 
-                      MR MATA BHIKH
-                  </span></li>
-                  <li>
-                    Languages:<span class="my-bio-data"
-                      id="languages-id">English,Hindi,Punjabi</span
+                <ol>
+                  <li class="details">
+                    D.O.B:<span class="my-bio-data" id="dob-id">
+                      05-05-1995</span
                     >
                   </li>
-                  <li>
-                    COMPONENTS<span class="Component of HRM" >
-                      <ul id="html-id">
-                        <li id="HR COPONENT-1">Human Resource planning</li>
-                        <li id="HR COMPONENT-2">Recruitment/decruitment</li>
-                        <li id="HR COMPONENT-3">Selection</li>
-                        <li id="HR COMPONENT-4">Orientation</li>
-                        <li id="HR COMPONENT-5">Training/development</li>
-                        <li id="HR COMPONENT-6">Performance Management</li>
-                        <li id="HR COMPONENT-7">Compensation & Benefits</li>
-                      </ul>
+                  <li class="details">
+                    Birth Place:<span class="my-bio-data" id="ludhian-id"
+                      >Ludhiana</span
+                    >
+                  </li>
+                  <li class="details">
+                    Quantification:<span class="my-bio-data" id="graduation-id">
+                      MBA</span
+                    >
+                  </li>
+
+                  <li class="details">
+                    Job:<span class="my-bio-data" id="software-id"
+                      >Human Resouce executive</span
+                    >
+                  </li>
+                  <li class="details">
+                    Hobbies:<span class="my-bio-data" id="cricket-id"
+                      >Learning new things</span
+                    >
+                  </li>
+                  <li class="details">
+                    Gender:<span class="my-bio-data" id="male-id"> FEMALE</span>
+                  </li>
+                  <li class="details">
+                    Father name:<span class="my-bio-data" id="MATA BHIKH-ID">
+                      Mr. Mata Bhikh
                     </span>
                   </li>
-                  <li>Contact:<span class="my-bio-data" id="contact">9653329339</span></li>
-                  <li>
-                    Email:<span class="my-bio-data" id="gmail-id"><a href="https://google.com">io2.Kanakgmail.com</a></span>
-                      <a href="https://gmail.com" io2.Kanakgmail.com</span
+                  <li class="details">
+                    Languages:<span class="my-bio-data" id="languages-id"
+                      >English,Hindi,Punjabi</span
                     >
                   </li>
-                  <li>Github:<span class="my-bio-data" id="git-id"> <a href="https://you tube.com">io2.Kanakgmail.com</a></span></li>
-                  <li id="likend">Likend Id</li>
+                  <li class="details">
+                    Components
+                    <ul id="html-id">
+                      <li id="HR COPONENT-1">
+                        <span class="ul-span my-bio-data"
+                          >Human Resource planning</span
+                        >
+                      </li>
+                      <li id="HR COMPONENT-2">
+                        <span class="ul-span my-bio-data"
+                          >Recruitment/decruitment</span
+                        >
+                      </li>
+                      <li id="HR COMPONENT-3">
+                        <span class="ul-span my-bio-data">Selection</span>
+                      </li>
+                      <li id="HR COMPONENT-4">
+                        <span class="ul-span my-bio-data">Orientation</span>
+                      </li>
+                      <li id="HR COMPONENT-5">
+                        <span class="ul-span my-bio-data"
+                          >Training/development</span
+                        >
+                      </li>
+                      <li id="HR COMPONENT-6">
+                        <span class="ul-span my-bio-data"
+                          >Performance Management</span
+                        >
+                      </li>
+                      <li id="HR COMPONENT-7">
+                        <span class="ul-span my-bio-data"
+                          >Compensation & Benefits</span
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="details">
+                    Contact:<span class="my-bio-data" id="contact"
+                      >9653329339</span
+                    >
+                  </li>
+                  <li class="details">
+                    Email:<span class="my-bio-data" id="gmail-id"
+                      ><a href="https://google.com">io2.Kanakgmail.com</a>
+                    </span>
+                  </li>
+                  <li class="details">
+                    Github:<span class="my-bio-data" id="git-id">
+                      <a href="https://you tube.com"
+                        >io2.Kanakgmail.com</a
+                      ></span
+                    >
+                  </li>
+                  <li class="details" id="likend">Likend Id</li>
                 </ol>
               </div>
             </div>
             <!--My photo block-->
           </div>
-         
         </div>
       </div>
     </div>
