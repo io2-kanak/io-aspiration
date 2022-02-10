@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Loading Animation</title>
+    <link rel="styesheet" href="style.css" />
+    <style>
+             body{
+          font-family: 'Robot' ;
+          background: #151515;
+      }
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      .loading{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+      }
+      .percent{
+          color: #999;
+          font-size: 100px;
+          font-weight: 400;
+          text-align: center;
+      }
+      .progress-bar{
+          width: 406px;
+          height: 21px;
+          background: #111;
+          border-radius: 13px;
+          padding: 3px;
+          box-sizing: border-box;
+
+      }
+      .progress{
+          width: 200px;
+          height: 15px;
+          background: #f60d54;
+          border-radius: 13px;
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="percent">100%</div>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+    </div>
+  </body>
+</html>

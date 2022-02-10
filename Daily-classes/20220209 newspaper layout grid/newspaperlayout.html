@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .item1 {
+            background-color: solid black;
+          grid-area: 1 / span 4 ;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          box-shadow: 2cm;
+          
+
+        }
+        .item2 {
+            grid-area: 2/ span 1;
+            grid-column: 2 / span 1;
+            font: size 2px;
+        }
+        
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas: 'myArea myArea myArea myArea myArea';
+          grid-gap: 10px;
+          background-color: #0e1114;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-color: rgba(212, 206, 206, 0.8);
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>News Paper Layout</h1>
+        
+    
+        <div class="grid-container">
+          <div class="item1">
+              <p>DISCOVER<br>
+                PIXABAY<br>
+                FREE IMAGES<br>
+                 <br> NO HOTLINKING</p>
+              
+            </div>
+          <div class="item2"> <h3>First Pig/Bird Hybrid Born</h3><br>
+            <p>ipsum dolor sit amet consectetur adipisicing elit.Debitis est odio harum 
+                inventore veniam et quis dolorum? Nulla dignissimos libero 
+                corporis reprehenderit numquam dolorem quaerat error voluptatibus asperiores deserunt!</p> 
+        </div>
+          <div class="item3"><h2>hgfghvvh</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Maiores quasi itaque, delectus repellat repellendus in nisi accusantium ut,
+              nesciunt ex beatae. Quam a qui in neque magnam cumque vero quaerat?</p>
+        </div>  
+          <div class="item4"><h2>jhhhjhgjg</h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+             dolore quasi reprehenderit a perferendis, facere excepturi itaque quas alias minima culpa ratione. 
+            Voluptates delectus cupiditate numquam corporis rem libero dicta.</p>
+        </div>
+          <div class="item5"><h2>gghghghg</h2> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Et sunt doloribus explicabo iure eos, quod, deserunt pariatur, officia reprehenderit totam ducimus porro suscipit. 
+            Ex consectetur odit debitis ullam quibusdam consequuntur.</p>
+        </div>
+          
+          
+          
+        </div>
+          
+</body>
+</html>
