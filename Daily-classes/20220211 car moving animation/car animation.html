@@ -7,31 +7,127 @@
       * {
         margin: 0;
         padding: 0;
-        background-color: rgb(48, 165, 165);
       }
-      .bg {
+      .road-map {
+        width: 100%;
+        height: 100%;
         position: relative;
-        background-image: url(https://image.shutterstock.com/display_pic_with_logo/309231746/2071900520/stock-vector-illustration-of-indian-road-vector-2071900520.jpg);
-        background-repeat: repeat-x;
-        height: 100vh;
-        background-size: cover;
-        -webkit-animation: animaten 10s linear infinite;
       }
-      .car {
+
+      .car-image {
+        z-index: 10;
+        width: 4%;
+        height: 4%;
         position: absolute;
-        bottom: 30px;
-        left: 100px;
-        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXV7HZQADUYmmw2A7od0Njr9AkkKIgw_DPHA&usqp=CAU);
-        width: 300px;
-        height: 140px;
-        image rotate: 360(deg);
+        left: 0%;
+        top: 36.5%;
+
+        transform: rotate(180deg);
+        animation: my-car;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
       }
-      keyframes animate {
-        from {
-          background-position: 0 0;
+
+      @keyframes my-car {
+        0% {
+          left: 0%;
+          top: 36.5%;
+          transform: rotate(180deg);
         }
-        to {
-          background-position: 100% 0;
+        5% {
+          left: 6%;
+          top: 36.5%;
+        }
+        6% {
+          transform: rotate(270deg);
+        }
+        10% {
+          left: 6%;
+          top: 60%;
+        }
+        11% {
+          transform: rotate(180deg);
+        }
+        15% {
+          left: 24%;
+          top: 60%;
+        }
+        16% {
+          transform: rotate(90deg);
+        }
+        20% {
+          left: 24%;
+          top: 37%;
+        }
+        21% {
+          transform: rotate(180deg);
+        }
+        25% {
+          left: 40%;
+          top: 37%;
+        }
+        26% {
+          transform: rotate(90deg);
+        }
+        30% {
+          left: 40%;
+          top: 24%;
+        }
+        31% {
+          transform: rotate(180deg);
+        }
+        35% {
+          left: 58%;
+          top: 24%;
+        }
+        36% {
+          transform: rotate(270deg);
+        }
+        37% {
+          left: 60%;
+          top: 26%;
+        }
+        39% {
+          transform: rotate(270deg);
+        }
+        40% {
+          left: 63%;
+          top: 37%;
+        }
+        41% {
+          transform: rotate(180deg);
+        }
+
+        45% {
+          left: 74%;
+          top: 39%;
+        }
+        60% {
+          transform: rotate(270deg);
+        }
+
+        51% {
+          left: 74%;
+          top: 56%;
+        }
+        62% {
+          transform: rotate(270deg);
+        }
+
+        70% {
+          left: 75%;
+          top: 60%;
+        }
+        75% {
+          transform: rotate(180deg);
+        }
+
+        100% {
+          left: 100%;
+          top: 60%;
+        }
+        65% {
+          transform: rotate(180deg);
         }
       }
     </style>
@@ -39,7 +135,10 @@
 
   <body>
     <div class="bg">
-      <div class="car"></div>
+      <div class="road-map">
+        <img src="road.jpg" alt="road-map" class="road-map" />
+        <img src="car.png" alt="My-car" class="car-image" />
+      </div>
     </div>
   </body>
 </html>

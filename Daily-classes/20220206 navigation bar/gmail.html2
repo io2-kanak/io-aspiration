@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>gmail.com</title>
+    <link rel="stylesheet" type=" text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="maindiv1">
+      <div class="divimg">
+        <img
+          src="3bar.png"
+          alt="barcode"
+          height="40px"
+          width="30px"
+          class="img2"
+        />
+      </div>
+      <img src="gmail.icon2.com.jpg" alt="gmail" height="30px" class="img" />
+
+      <input
+        type="text"
+        placeholder=" .............Search mail"
+        name="search"
+        class="search"
+      />
+      <i class="fa-solid fa-magnifying-glass" style="color: #696c71" id="icon">
+      </i>
+      <div class="root">
+        <img src="markqus.jpg" alt="qusmark" height="22px" />
+      </div>
+      <div class="root1">
+        <img src="settingicon2.jpg" alt="setting" height="22px" />
+      </div>
+      <div class="root2">
+        <img src="9dots2.jpg" alt="3*3docs" height="23px" />
+      </div>
+      <div class="root3">
+        <p>s</p>
+      </div>
+    </div>
+    <div class="maindiv2">
+      <button type="button" class="button">Compose</button>
+      <img src="plusicon.png" alt="plus" height="30px" class="plus" />
+      <i class="fa-regular fa-square-full">▼</i> 
+      <i class="fa-solid fa-arrow-rotate-right"></i>
+      <font-awesome-icon icon="fa-solid fa-ellipsis-stroke-vertical" /> </i>
+
+    </div>
+
+    <div class="maindiv3">
+      <div class="code">
+        <h3 style="color: red" class="pin">
+          <i class="fa-solid fa-inbox"></i>
+          <span style="color: #ffffff">---- </span>inbox
+        </h3>
+        <p class="pin">
+          <i class="fa-solid fa-star" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+         Starred 
+        </p>
+        <p class="pin">
+          <i class="fa-solid fa-clock" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+          <b>  Snoozed</b>
+        </p>
+        <p class="pin">
+          <i class="fa-solid fa-paper-plane" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+          Sent
+        </p>
+        <p class="pin">
+          <i class="fa-brands fa-firstdraft" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+
+         <b> Drafts</b>
+        </p>
+        <p class="pin">
+          <i class="fa-solid fa-angle-down" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+          More
+          <hr>
+        </p>
+        <p class="pin">
+          <i class="fa-solid fa-video" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+          New meeting
+        </p>
+        <p class="pin">
+          <i class="fa-regular fa-keyboard" style="color: #767676"></i>
+          <span style="color: #ffffff">......</span>
+          Join meeting
+        </p>
+        <div class="han">
+        <p style="font-family: 'Google Sans',Roboto,RobotoDraft,Helvetica,Arial,sans-serif;" > Hangouts</p>
+      </div>
+    </div>
+        <p class="code9" style="font-size:30px; margin: 40px; "> s</p>
+      <div class="maindiv4">
+        <div class="child">
+        <P style="color: red" class="room" >
+          <i class="fa-solid fa-inbox"></i>
+          <span style="color: #ffffff">---</span>Primary
+        </P>
+        </div>
+        <div class="child1">
+        <p class="room1"> 
+          <i class="fa-solid fa-user-group"  style="color: #767676"></i>
+          <span style="color: #ffffff">---</span>
+          Social
+        </p>
+      </div>
+      <div class="child2">
+        <p class="room2">
+          <i class="fa-solid fa-star" style="color: #767676"></i>
+          <span style="color: #ffffff">....</span> Promotion
+          
+        </p>
+      </div>
+      <div class="child3">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ........11:30pm </label>
+      </div>    
+      
+      <div class="child4">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Jun10</b> </label>
+      </div>     
+      <div class="child5">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Jun15</b> </label>
+      </div>  
+      <div class="child6">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Jun17</b> </label>
+      </div>     
+      <div class="child7">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com <span style="color: #ffffff;">........</span>   Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Jun10</b> </label>
+      </div>   
+      <div class="child8">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1">Bankbazar.com <span style="color: #ffffff;">........</span>   Your credit score has chaged  check it for free  log in page check your credit score free  log in page check your credit .............. <b>Jun25</b> </label>
+      </div>     
+      <div class="child9">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1">Bankbazar.com <span style="color: #ffffff;">........</span>   Your credit score has chaged  check it for free  log in page check your credit score free  log in page check your credit .............. <b>Fed5</b></label>
+      </div>     
+      <div class="child10">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"> Bankbazar.com  <span style="color: #ffffff;">........</span>  Your credit score has chaged  check it for free  log in page check your credit score free  log in page check your credit .............. <b>Fed6</b></label>
+      </div>                 
+      <div class="child11">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com  <span style="color: #ffffff;">........</span>   Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Fed7</b></label>
+      </div>     
+      <div class="child12">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com  <span style="color: #ffffff;">........</span>  Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Feb8</b> </label>
+      </div>   <a href="tasks"><i class="fa-solid fa-list-check"></i></a>
+      <div class="child13">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com <span style="color: #ffffff;">........</span>   Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Fab09</b> </label>
+      </div>  
+      <div class="child14">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit ......... <b>Fab11</b> </label>
+      </div>  
+      <div class="child15">
+        <input type="checkbox" id="gmail1" name="vehicle1" value="gmail">
+
+        <i class="fa-solid fa-star" style="color: #767676"></i>
+        <label for="vehicle1"><b> Bankbazar.com<span style="color: #ffffff;">........</span>    Your credit score has chaged </b> check it for free  log in page check your credit score free  log in page check your credit......... <b>Fab13</b> </label>
+      </div>  
+      <div class="child16">
+      <img src="ad pic.jpg" alt="lux ad" height=" 80px" width="700px" >
+    </div>
+      
+        <div class="maindiv5">
+          <div>
+          <br>
+          <a href="calender"><i class="fa-solid fa-calendar-days"></i></a>
+        </div>
+        <div>
+          <br>
+            <a href="keep"><i class="fa-solid fa-pager"></i></a>
+          </div>
+          <div>
+            <br>
+            <a href="tasks"><i class="fa-solid fa-list-check"></i></a>
+          </div>
+          <div>
+            <br>
+            <a href="contant"><i class="fa-solid fa-address-book"></i></a>
+          </div>
+
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
