@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var F, L;
+      F = prompt("Enter first Name");
+      L = prompt("Enter Last Name");
+      alert("Hello!" + F + "Vinay maurya");
+
+      /* Exercise 2:
+                  Check whether or not a string is blank
+            Write a JavaScript function isBlank(input) that checks whether or not the input String is
+            blank.
+            The function returns true if the input String is blank, false  otherwise.*/ F;
+
+      isBlank = function (input) {
+        if (input.length === 0) return true;
+        else return false;
+      };
+      console.log(isBlank(""));
+      console.log(isBlank("HELLO"));
+
+      /* Exercise 3: Split a string and convert it to an array
+            Write a JavaScript function stringToArray(input) to split a string and convert it into an array
+            of words.
+            The function should return the array of words.
+            Test Run :
+            console.log(stringToArray("Robin Singh"));
+            ["Robin", "Singh"]*/
+
+      stringToArray = function (input) {
+        return input.trim().split(" ");
+      };
+      console.log(stringToArray("Robin Singh"));
+      ["Robin", "Singh"];
+
+      /* Exercise 4: Compare String
+                 Get two values from the user ‘password’ and ‘confirm password’ using the prompt box
+      and display a message “Password validated” if both the values match else display the
+      message “Password do not match*/
+
+      // COMPARE STRINGS
+      const password = prompt("Enter Password"),
+        confirmPass = prompt("Confirm Password");
+      const compareStrings = () =>
+        password == confirmPass
+          ? alert("Password validated")
+          : alert("Passwords do not match");
+
+      // STRING LENGTH
+      const strLength = prompt("Your string shall be counted");
+      const strCount = () => alert(strLength.length);
+
+      //  // WELCOME USER
+      // const userName = prompt("What is your name?");
+      // const greetUser = () => alert("Hello " + userName);
+
+      // // STRING REVERSE
+      // const reversable = prompt("Enter a string to be reversed");
+      // const reverseString = () => alert(reversable.split("").reverse().join(""));
+
+      // // FIND PALINDROME
+      // const palindrome = prompt("Is your phrase a palindrome?");
+      // const palindromeReverse = palindrome.split("").reverse().join("
+    </script>
+  </body>
+</html>

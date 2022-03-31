@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)http://127.0.0.1:5500/20220222%20table%20assignment%20RJM/Tableassignment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+  <style>
+    .main {
+      border: 2px solid black;
+      height: 700px;
+      width: 750px;
+      background-color: rgb(251, 255, 255);
+      margin-left:350px;
+      text-align: center;
+        }
+#child1{
+border: 2px solid black;
+width:600px;
+height: 500px;
+background-color: rgb(232, 240, 240);
+margin-left:80px;
+}
+#child2{
+    padding: 20px;
+    border: 1px solid rgb(88, 85, 85);
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+.second div{
+    right: 500px;
+}
+  </style></head>
+  
+  <body>
+
+    <h2 style="text-align: center">Assignment-1</h2>
+      <div class="main">
+            <p>
+                </p><ol>
+                <li>
+                  Build a Login Form with HTML,CSS and VAlidation of Username,<br>
+                  Password and other personal detaila Using with javascript.<br>
+                  (You can Refer to the below picture for the reference of this assignment)
+                </li>
+            </ol>
+            <p></p>
+            <div class="second div" id="child1">
+                <h1> Registration Form</h1>
+              
+                    <form>
+                        <table>
+                            <tbody><tr>
+                                <td>
+                                    User Id:
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="Name">
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                Password:
+                            
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Password">
+                            </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Name:
+                              </td>
+                              <td>
+                                  <input type="text" placeholder="Name">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Address:</td>
+                              <td>
+                                  <input type="text" placeholder="Address">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Country:
+                              </td>
+                              <td><select name="country name" id="country">
+                                  <option>(Please select a country)</option>
+      
+                                  <option> India</option>
+                                  <option> Australia</option>
+                                  <option> America</option>
+                                  <option> France</option>
+                                  <option>Germany</option>
+                                  </select>
+                               </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  ZIP Code:
+                              </td>
+                              <td>
+                                <input type="text">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Email:
+                              </td>
+                              <td>
+                                <input type="text">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>Sex</td>
+                              <td>
+                                  <input type="radio" name="gender">Male
+                                  <input type="radio" name="gender">Female
+      
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>
+                                  Language:
+                              </td>
+                              <td>
+                                  <input type="checkbox" class="Language">English
+                                  <input type="checkbox" class="Language">Non English
+      
+                              </td>
+                          </tr>
+                         
+                          
+                          
+      
+                        </tbody></table>
+                    </form>
+                    
+                        About: 
+                        
+                    
+                    <div class="div3" id="child2"> 
+                      <h4> Optional</h4>
+      
+            </div>
+            
+            
+            
+              
+                  <input type="Submit">
+              
+          
+      
+      
+      </div>
+         
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></body></html>

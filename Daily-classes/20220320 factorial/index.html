@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial</title>
+  </head>
+  <script>
+    //   /*population per*/
+    // const numOfYr = 10;
+    // let popu = 100000;
+    // console.log('1st year"s population is', popu.toFixed(2));
+    // document.write("1stpopulation is", popu.toFixed(2), "<br/>");
+    // for (let i = 1; i <= numOfYr; i++) {
+    //   if (i > 1) {
+    //     const per = (popu * 10) / 100;
+    //     popu = popu + per;
+    //     console.log(i + 'th yera"s population is', popu.toFixed(2));
+    //     document.write(i + 'th year"s population is', popu.toFixed(2), "<br/>");
+    //   }
+    // }
+
+    /*factorial Number*/
+    const Number = prompt("Enter a number");
+    let facNum = 1;
+    for (let i = 1; i <= number; i++) {
+      if (i < number) {
+        facNum = facNum * (number - i);
+      }
+      if (i == number) {
+        facNum = facNum * Number;
+      }
+    }
+    console.log(facNum);
+
+    //   /*switch case*/
+    //      const option = prompt("Enter any option");
+    //      switch(Number(option)){
+    //          case 1:
+    //              const number = prompt("enter any number to Find even/odd");
+    //              let value = number % 2;
+    //              document.write(value == 0 ? `${number}, is an even number':${number} is an odd number');
+    //
+  </script>
+  <body>
+    Factorial Number
+  </body>
+</html>

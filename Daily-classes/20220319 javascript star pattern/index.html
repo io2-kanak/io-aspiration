@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-start pattern</title>
+  </head>
+  <script>
+    /* for (let r = 1; r <= 10; r++) {
+      for (let c = 1; c <= r; c++) {
+        if (c == 1 || r == c || r == 10) {
+          document.write("*   &nbsp;")
+        } else {
+          document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+        }
+      }
+      document.write("</br>");
+    }*/
+
+    var rows = 5;
+    for (var i = 1; i <= rows; i++) {
+      for (var k = 1; k <= rows - i; k++) {
+        document.write("&nbsp;");
+      }
+      for (var j = 1; j <= i; j++) {
+        document.write("* ");
+      }
+      document.write("</br>");
+    }
+
+    /*var rows = 5;
+    for (var i = 1; i <= rows; i++) {
+      for (var k = 1; k <= rows - i; k++) {
+        document.write("* &nbsp;");
+      }
+      for (var j = 1; j <= i; j++) {
+        document.write(i);
+      }
+      document.write("</br>");
+    }*/
+  </script>
+  <body></body>
+</html>

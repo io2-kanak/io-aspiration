@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <script>
+    /**
+     * Function definition
+     * Function to print Even Odd
+     * */
+    function evenOdd(Num) {
+      if (num % 2 == 0) {
+        return document.write(`${num} is an Even number1`, "<br/>");
+      }
+      if (num % 2 != 0) {
+        return document.write(`${num} is an Odd number1`, "<br/>");
+      }
+    }
+    /**
+     * ES6(ARROW FUNCTION) function definition
+     * Function to print Even odd
+     * */
+    const evenOddES6 = (num) => {
+      // to find even odd
+      if (num % 2 == 0) {
+        return document.write(`${num} is an Even number2`, "<br/>");
+      }
+      if (num % 2 != 0) {
+        return documment.write(`${num} is an Odd number2`, "<br/>");
+      }
+    };
+
+    /**
+     * Function definition
+     * Function to print table
+     * */
+    function table(tab = 2) {
+      for (let i = 1; i <= 10; i++) {
+        {
+          document.write(`${tab} x ${i} = ${tab * i}`, "<br/>");
+        }
+      }
+
+      const factorial = (num = 5) => {
+        if (num > 20){
+            return document.write("kindly enter value less than 20");
+      }
+
+
+
+      let fact = 1;
+      for (let i = 1; i <= num; i++) {
+        if (i < num) {
+          fact = fact * (num - 1);
+        }
+        if (i == num) {
+          fact = fact * num;
+        }
+      }
+      document.write(fact);
+    };
+    const fac = prompt("Enter a number:");
+    factorial(fac);
+
+    /*const number = parseInt(prompt("Enter a positive integer: "));
+
+        // checking if number is negative
+        if (number < 0) {
+          console.log("Error! Factorial for negative number does not exist.");
+        }
+
+        // if number is 0
+        else if (number === 0) {
+          console.log(`The factorial of ${number} is 1.`);
+        }
+
+        // if number is positive
+        else {
+          let fact = 1;
+          for (i = 1; i <= number; i++) {
+            fact *= i;
+          }
+          console.log(`The factorial of ${number} is ${fact}.`);
+        }*/
+  </script>
+  <body></body>
+</html>
