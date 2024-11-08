@@ -1,0 +1,20 @@
+def add_expense(expenses):
+    # Collect expense details from the user
+    date = input("Enter the date (YYYY-MM-DD): ")
+    category = input("Enter the category: ")
+    amount = float(input("Enter the amount spent: "))
+    description = input("Enter a brief description: ")
+
+    # Create a dictionary for the expense
+    expense = {
+        'date': date,
+        'category': category,
+        'amount': amount,
+        'description': description
+    }
+
+    # Append the expense to the list
+    expenses.append(expense)
+    print("Expense added successfully!")
+
+    return expenses  # Return updated list
