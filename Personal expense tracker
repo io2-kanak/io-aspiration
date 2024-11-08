@@ -18,3 +18,99 @@ def add_expense(expenses):
     print("Expense added successfully!")
 
     return expenses  # Return updated list
+
+###
+
+def view_expenses(expenses):
+    """Function to view all stored expenses."""
+
+    if not expenses:  # Check if the expenses list is empty
+        print("No expenses recorded.")
+        return
+
+    print("\n--- View Expenses ---")
+
+    # Loop through the expenses list
+    for expense in expenses:
+        # Check if the expense has all the required keys
+        if 'date' in expense and 'category' in expense and 'amount' in expense and 'description' in expense:
+            # Print the expense in a readable format
+            print(f"{expense['date']} | {expense['category']} | ${expense['amount']:.2f} | {expense['description']}")
+        else:
+            # If any required key is missing, skip the expense and notify the user
+            print("Incomplete expense entry found, skipping...")
+
+# Sample data to test the function
+expenses = [
+    {'date': '2024-11-01', 'category': 'Food', 'amount': 25.50, 'description': 'Dinner at restaurant'},
+    {'date': '2024-11-02', 'category': 'Travel', 'amount': 100.00, 'description': 'Flight ticket'},
+    {'date': '2024-11-03', 'category': 'Food', 'amount': 15.00},  # Incomplete entry (missing description)
+    {'date': '2024-11-04', 'category': 'Entertainment', 'amount': 50.00, 'description': 'Movie night'}
+]
+
+# Call the function to view expenses
+view_expenses(expenses)
+
+
+##
+import csv
+
+def save_expenses(expenses, filename='expenses.csv'):
+    with open(filename, mode='w', newline='') as file:
+        fieldnames = ['date', 'category', 'amount', 'description']
+        writer = csv.DictWriter(file, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerows(expenses)
+    print("Your expenses have been saved.")
+
+def load_expenses(filename='expenses.csv'):
+    expenses = []
+    try:
+        with open(filename, mode='r') as file:
+            reader = csv.DictReader(file)
+            for row in reader:
+                row['amount'] = float(row['amount'])  # Convert the amount to a number again
+                expenses.append(row)
+    except FileNotFoundError:
+        print("Looks like you don't have any saved expenses yet. Starting fresh!")
+    return expenses
+
+
+###
+
+def main():
+    expenses = []  # Start with an empty list of expenses
+    budget = float(input("Set your budget: "))  # Ask the user to set a budget
+    
+    while True:
+        print("\nMenu:")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Track Budget")
+        print("4. Exit")
+        
+        choice = input("Choose an option: ")
+        
+        if choice == '1':
+            expense = float(input("Enter expense amount: "))
+            expenses.append(expense)
+            print(f"Expense of {expense} added.")
+        elif choice == '2':
+            print("Expenses:")
+            for expense in expenses:
+                print(f"${expense}")
+        elif choice == '3':
+            total_expenses = sum(expenses)
+            print(f"Total expenses: ${total_expenses}")
+            print(f"Remaining budget: ${budget - total_expenses}")
+        elif choice == '4':
+            print("Exiting the program.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
+
+
+
